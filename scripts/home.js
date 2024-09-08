@@ -43,9 +43,10 @@ import { getProject } from '../data/projects.js';
 import { getTeam } from '../data/Collaborator.js';
 
 
-let homeHTML = '';
+let homeHTML = '<h2 color="white" >Project List</h2>';
 projects.forEach((project) => {
     homeHTML += `
+        
         <p class="project-title" data-project-title="${project.title}">${project.title}</p>
     `;
 });
